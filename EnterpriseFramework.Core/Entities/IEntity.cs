@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnterpriseFramework.Project.DataAccess
+namespace EnterpriseFramework.Core.Entities
 {
-    public class Class1
+    public interface IEntity
     {
     }
 }
