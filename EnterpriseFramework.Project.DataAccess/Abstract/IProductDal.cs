@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 
 namespace EnterpriseFramework.Project.DataAccess.Abstract
 {
+    /// <summary>
+    /// Sample : EfProductDal or NhProductDal
+    /// </summary>
     public interface IProductDal : IEntityRepository<Product>
     {
         //You can use this scope for specific Query (Such as Join Queries) on Product Table
