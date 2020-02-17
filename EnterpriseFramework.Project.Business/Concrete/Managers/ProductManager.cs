@@ -6,7 +6,9 @@ using System.Collections.Generic;
 using EnterpriseFramework.Core.Aspects.PostSharp.ValidationAspects;
 using EnterpriseFramework.Core.Aspects.PostSharp.TransactionAspects;
 using EnterpriseFramework.Core.Aspects.PostSharp.CacheAspects;
-using EnterpriseFramework.Core.CrossCuttingConcerns.Microsoft;
+using EnterpriseFramework.Core.CrossCuttingConcerns.Caching.Microsoft;
+using EnterpriseFramework.Core.CrossCuttingConcerns.Logging.Log4Net.Loggers;
+using EnterpriseFramework.Core.Aspects.PostSharp.LogAspects;
 
 namespace EnterpriseFramework.Project.Business.Concrete.Managers
 {

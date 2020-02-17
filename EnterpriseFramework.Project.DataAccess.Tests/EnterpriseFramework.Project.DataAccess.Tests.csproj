@@ -67,15 +67,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EnterpriseFramework.Core\EnterpriseFramework.Core.csproj">
-      <Project>{157991C9-3C1B-4800-89F6-B709A31DF1CC}</Project>
+      <Project>{157991c9-3c1b-4800-89f6-b709a31df1cc}</Project>
       <Name>EnterpriseFramework.Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\EnterpriseFramework.Project.DataAccess\EnterpriseFramework.Project.DataAccess.csproj">
-      <Project>{D8DC0CDB-5EDE-49BF-A783-78D22A294D9E}</Project>
+      <Project>{d8dc0cdb-5ede-49bf-a783-78d22a294d9e}</Project>
       <Name>EnterpriseFramework.Project.DataAccess</Name>
     </ProjectReference>
     <ProjectReference Include="..\EnterpriseFramework.Project.Entities\EnterpriseFramework.Project.Entities.csproj">
-      <Project>{A5B436D9-5878-46AA-8F81-C6BD834383A5}</Project>
+      <Project>{a5b436d9-5878-46aa-8f81-c6bd834383a5}</Project>
       <Name>EnterpriseFramework.Project.Entities</Name>
     </ProjectReference>
   </ItemGroup>

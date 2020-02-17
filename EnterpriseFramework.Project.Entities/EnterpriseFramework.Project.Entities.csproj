@@ -51,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EnterpriseFramework.Core\EnterpriseFramework.Core.csproj">
-      <Project>{157991C9-3C1B-4800-89F6-B709A31DF1CC}</Project>
+      <Project>{157991c9-3c1b-4800-89f6-b709a31df1cc}</Project>
       <Name>EnterpriseFramework.Core</Name>
     </ProjectReference>
   </ItemGroup>

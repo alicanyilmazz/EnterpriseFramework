@@ -1,0 +1,28 @@
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "Add",
+    "Parameters": [
+      {
+        "Name": "product",
+        "Type": "Product",
+        "Value": {
+          "Id": 1,
+          "Name": "Premium Asus Rog",
+          "Description": "Intel Core i7 processor",
+          "Price": 23.0,
+          "comments": []
+        }
+      }
+    ]
+  }
+}
