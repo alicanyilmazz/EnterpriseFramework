@@ -51,6 +51,76 @@
 
             context.SaveChanges();
 
+            User userone = new User()
+            {
+                UserName = "03Alican",
+                FirstName = "Alican",
+                LastName = "Yilmaz",
+                Email = "alicany@mail",
+                Password = "1a2b3c"
+
+            };
+
+            context.users.AddOrUpdate(userone);
+
+            User usertwo = new User()
+            {
+                UserName = "05Alican",
+                FirstName = "Ali",
+                LastName = "Can",
+                Email = "contact@alicanyilmaz",
+                Password = "a1b2c3"
+
+            };
+
+            context.users.AddOrUpdate(usertwo);
+
+            context.SaveChanges();
+
+            List<User> users = context.users.ToList();
+
+            Role roleone = new Role()
+            {
+                Name="Admin",
+            };
+
+            context.roles.AddOrUpdate(roleone);
+
+            Role roletwo = new Role()
+            {
+                Name = "Student",
+            };
+
+            context.roles.AddOrUpdate(roletwo);
+
+            Role rolethree = new Role()
+            {
+                Name = "Editor",
+            };
+
+            context.roles.AddOrUpdate(rolethree);
+
+            context.SaveChanges();
+
+            List<Role> roles = context.roles.ToList();
+
+            UserRoles userRolesone = new UserRoles()
+            {
+               UserId=users[0].Id,
+               RoleId=roles[1].Id,
+            };
+
+            context.userRoles.AddOrUpdate(userRolesone);
+
+            UserRoles userRolestwo = new UserRoles()
+            {
+                UserId = users[1].Id,
+                RoleId = roles[0].Id,
+            };
+
+            context.userRoles.AddOrUpdate(userRolestwo);
+
+            context.SaveChanges();
         }
     }
 }

@@ -77,11 +77,20 @@
   <ItemGroup>
     <Compile Include="Abstract\ICommentDal.cs" />
     <Compile Include="Abstract\IProductDal.cs" />
+    <Compile Include="Abstract\IRoleDal.cs" />
+    <Compile Include="Abstract\IUserDal.cs" />
+    <Compile Include="Abstract\IUserRolesDal.cs" />
     <Compile Include="Concrete\EntityFramework\Dals\EfCommentDal.cs" />
     <Compile Include="Concrete\EntityFramework\Dals\EfProductDal.cs" />
+    <Compile Include="Concrete\EntityFramework\Dals\EfRoleDal.cs" />
+    <Compile Include="Concrete\EntityFramework\Dals\EfUserDal.cs" />
+    <Compile Include="Concrete\EntityFramework\Dals\EfUserRolesDal.cs" />
     <Compile Include="Concrete\EntityFramework\DatabaseContext.cs" />
     <Compile Include="Concrete\EntityFramework\Mappings\CommentMap.cs" />
     <Compile Include="Concrete\EntityFramework\Mappings\ProductMap.cs" />
+    <Compile Include="Concrete\EntityFramework\Mappings\RoleMap.cs" />
+    <Compile Include="Concrete\EntityFramework\Mappings\UserMap.cs" />
+    <Compile Include="Concrete\EntityFramework\Mappings\UserRolesMap.cs" />
     <Compile Include="Concrete\NHibernate\Dals\NhCommentDal.cs" />
     <Compile Include="Concrete\NHibernate\Dals\NhProductDal.cs" />
     <Compile Include="Concrete\NHibernate\Helpers\SqlServerHelper.cs" />

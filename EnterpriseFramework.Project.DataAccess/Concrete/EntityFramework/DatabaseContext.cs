@@ -20,11 +20,17 @@ namespace EnterpriseFramework.Project.DataAccess.Concrete.EntityFramework
         }
         public DbSet<Product> products { get; set; }
         public DbSet<Comment> comments { get; set; }
+        public DbSet<User> users { get; set; }
+        public DbSet<UserRoles> userRoles { get; set; }
+        public DbSet<Role> roles { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new ProductMap());
             modelBuilder.Configurations.Add(new CommentMap());
+            modelBuilder.Configurations.Add(new UserMap());
+            modelBuilder.Configurations.Add(new UserRolesMap());
+            modelBuilder.Configurations.Add(new RoleMap());
         }
     }
 }

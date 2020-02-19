@@ -9,6 +9,9 @@ using EnterpriseFramework.Core.Aspects.PostSharp.CacheAspects;
 using EnterpriseFramework.Core.CrossCuttingConcerns.Caching.Microsoft;
 using EnterpriseFramework.Core.CrossCuttingConcerns.Logging.Log4Net.Loggers;
 using EnterpriseFramework.Core.Aspects.PostSharp.LogAspects;
+using EnterpriseFramework.Core.Aspects.PostSharp.PerformanceAspects;
+using System.Threading;
+using EnterpriseFramework.Core.Aspects.PostSharp.AuthorizationAspects;
 
 namespace EnterpriseFramework.Project.Business.Concrete.Managers
 {
@@ -29,6 +32,8 @@ namespace EnterpriseFramework.Project.Business.Concrete.Managers
         }
 
         [CacheAspect(typeof(MemoryCacheManager),60)]
+        //[PerformanceCounterAspect(2)]  --> PerformanceCounterAspect using Assembly level
+        [SecuredOperation(Roles ="Admin,Editor")]
         public List<Product> GetAll()
         {
             return _productDal.GetList();
@@ -40,6 +45,7 @@ namespace EnterpriseFramework.Project.Business.Concrete.Managers
         }
 
         [TransactionScopeAspect]
+        [FluentValidationAspect(typeof(ProductValidator))]
         public void TransactionalOperations(Product adding_product, Product updating_product)
         {
             _productDal.Add(adding_product);

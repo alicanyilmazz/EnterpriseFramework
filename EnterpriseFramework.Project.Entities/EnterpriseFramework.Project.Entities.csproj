@@ -44,6 +44,9 @@
     <Compile Include="ComplexTypes\ProductDetail.cs" />
     <Compile Include="Concrete\Entities\Comment.cs" />
     <Compile Include="Concrete\Entities\Product.cs" />
+    <Compile Include="Concrete\Entities\Role.cs" />
+    <Compile Include="Concrete\Entities\User.cs" />
+    <Compile Include="Concrete\Entities\UserRoles.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

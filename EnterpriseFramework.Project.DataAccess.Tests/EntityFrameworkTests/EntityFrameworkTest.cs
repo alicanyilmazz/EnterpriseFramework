@@ -28,7 +28,7 @@ namespace EnterpriseFramework.Project.DataAccess.Tests.EntityFrameworkTests
     }
 }
 /*
- * We did not like a test code because Configuration used FakeData dll for every transaction Migration.
+ * We did not like a test code as follows because Configuration Seed Method used continuously FakeData dll for every transaction Migration.
    select count(*) from Product where Product.Name like '%j%'
    var result = efProductDal.GetList(p =>p.Name.Contains("j"));   
  */

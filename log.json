@@ -26,3 +26,203 @@
     ]
   }
 }
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "TransactionalOperations",
+    "Parameters": [
+      {
+        "Name": "adding_product",
+        "Type": "Product",
+        "Value": {
+          "Id": 1,
+          "Name": "Premium Lenovo",
+          "Description": "Intel Core i7 processor",
+          "Price": 23.0,
+          "comments": []
+        }
+      },
+      {
+        "Name": "updating_product",
+        "Type": "Product",
+        "Value": {
+          "Id": 1,
+          "Name": "Premium Casper",
+          "Description": "Intel Core i8 processor",
+          "Price": 29.0,
+          "comments": []
+        }
+      }
+    ]
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "TransactionalOperations",
+    "Parameters": [
+      {
+        "Name": "adding_product",
+        "Type": "Product",
+        "Value": {
+          "Id": 1,
+          "Name": "Premium Sample1",
+          "Description": "Intel Core i21 processor",
+          "Price": 23.0,
+          "comments": []
+        }
+      },
+      {
+        "Name": "updating_product",
+        "Type": "Product",
+        "Value": {
+          "Id": 1,
+          "Name": "Premium Sample2",
+          "Description": "Intel Core i8 processor",
+          "Price": 18.0,
+          "comments": []
+        }
+      }
+    ]
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "TransactionalOperations",
+    "Parameters": [
+      {
+        "Name": "adding_product",
+        "Type": "Product",
+        "Value": {
+          "Id": 1,
+          "Name": "Asus Rog",
+          "Description": "Amd processor",
+          "Price": 23.0,
+          "comments": []
+        }
+      },
+      {
+        "Name": "updating_product",
+        "Type": "Product",
+        "Value": {
+          "Id": 1,
+          "Name": "Phone",
+          "Description": "Amd processor",
+          "Price": 18.0,
+          "comments": []
+        }
+      }
+    ]
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "errors": [
+      {
+        "PropertyName": "Price",
+        "ErrorMessage": "'Price' must be greater than '20'.",
+        "AttemptedValue": 3.0,
+        "CustomState": null,
+        "Severity": 0,
+        "ErrorCode": "GreaterThanValidator",
+        "FormattedMessageArguments": [],
+        "FormattedMessagePlaceholderValues": {
+          "ComparisonValue": 20.0,
+          "ComparisonProperty": "",
+          "PropertyName": "Price",
+          "PropertyValue": 3.0
+        },
+        "ResourceName": "GreaterThanValidator"
+      }
+    ],
+    "ClassName": "FluentValidation.ValidationException",
+    "Message": "Validation failed: \r\n -- Price: 'Price' must be greater than '20'.",
+    "Data": null,
+    "InnerException": null,
+    "HelpURL": null,
+    "StackTraceString": "   at EnterpriseFramework.Core.CrossCuttingConcerns.Validation.FluentValidation.ValidatorTool.FluentValidate(IValidator validator, Object entity) in C:\\Users\\alican\\source\\repos\\EnterpriseFramework\\EnterpriseFramework.Core\\CrossCuttingConcerns\\Validation\\FluentValidation\\ValidatorTool.cs:line 17\r\n   at EnterpriseFramework.Core.Aspects.PostSharp.ValidationAspects.FluentValidationAspect.OnEntry(MethodExecutionArgs args) in C:\\Users\\alican\\source\\repos\\EnterpriseFramework\\EnterpriseFramework.Core\\Aspects\\PostSharp\\ValidationAspects\\FluentValidationAspect.cs:line 28\r\n   at EnterpriseFramework.Project.Business.Concrete.Managers.ProductManager.TransactionalOperations(Product adding_product, Product updating_product) in C:\\Users\\alican\\source\\repos\\EnterpriseFramework\\EnterpriseFramework.Project.Business\\Concrete\\Managers\\ProductManager.cs:line 45",
+    "RemoteStackTraceString": null,
+    "RemoteStackIndex": 0,
+    "ExceptionMethod": "8\nFluentValidate\nEnterpriseFramework.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null\nEnterpriseFramework.Core.CrossCuttingConcerns.Validation.FluentValidation.ValidatorTool\nVoid FluentValidate(FluentValidation.IValidator, System.Object)",
+    "HResult": -2146233088,
+    "Source": "EnterpriseFramework.Core",
+    "WatsonBuckets": null
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}

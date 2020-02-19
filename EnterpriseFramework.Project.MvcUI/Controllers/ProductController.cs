@@ -38,5 +38,27 @@ namespace EnterpriseFramework.Project.MvcUI.Controllers
 
             return "Added.";
         }
+
+        public string AddAndUpdate()
+        {
+            _productService.TransactionalOperations(new Entities.Concrete.Entities.Product
+            {
+                Id = 1,
+                Price = 3,
+                Description = "Alican processor",
+                Name = "Phone"
+
+            },
+            new Entities.Concrete.Entities.Product
+            {
+                Id = 1,
+                Price = 28,
+                Description = "Yılmaz processor",
+                Name = "Phone"
+
+            });
+
+            return "Done!";
+        }
     }
 }
