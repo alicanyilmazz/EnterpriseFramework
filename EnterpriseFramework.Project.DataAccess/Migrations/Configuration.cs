@@ -18,109 +18,125 @@
 
         protected override void Seed(EnterpriseFramework.Project.DataAccess.Concrete.EntityFramework.DatabaseContext context)
         {
-            for (int i = 0; i < 40; i++)
+            //Adding Product
+            #region
+
+            if (!context.Products.Any())
             {
-                Product product = new Product()
+                var productsList = new List<Product>()
                 {
-                    Id = i + 1,
-                    Name = FakeData.NameData.GetFirstName(),
-                    Description = FakeData.PlaceData.GetStreetName(),
-                    Price = FakeData.NumberData.GetNumber(1, 100)
+                    new Product(){Name="KF552",Description="Asus Rog",Price=FakeData.NumberData.GetNumber(1, 300)},
+                    new Product(){Name="Airstar",Description="Lenovo",Price=FakeData.NumberData.GetNumber(1, 300)},
+                    new Product(){Name="Via",Description="Casper",Price=FakeData.NumberData.GetNumber(1, 300)},
+                    new Product(){Name="Avatar",Description="MSI",Price=FakeData.NumberData.GetNumber(1, 300)},
+                    new Product(){Name="X6",Description="Iphone",Price=FakeData.NumberData.GetNumber(1, 300)},
+                    new Product(){Name="S7 Edge",Description="Samsung",Price=FakeData.NumberData.GetNumber(1, 300)},
+                    new Product(){Name="S9 Edge",Description="Samsung",Price=FakeData.NumberData.GetNumber(1, 300)},
+                    new Product(){Name="Galaxy S6",Description="Samsung",Price=FakeData.NumberData.GetNumber(1, 300)},
+                    new Product(){Name="Via Phone",Description="Casper",Price=FakeData.NumberData.GetNumber(1, 300)},
+                    new Product(){Name="Daker",Description="Acer",Price=FakeData.NumberData.GetNumber(1, 300)},
+                    new Product(){Name="Sage",Description="IBM",Price=FakeData.NumberData.GetNumber(1, 300)},
+                    new Product(){Name="Routon",Description="Kennon",Price=FakeData.NumberData.GetNumber(1, 300)},
+                    new Product(){Name="M12",Description="Xaimio",Price=FakeData.NumberData.GetNumber(1, 300)},
+                    new Product(){Name="M9",Description="Xaimio Mi",Price=FakeData.NumberData.GetNumber(1, 300)},
+                    new Product(){Name="Lotus",Description="Asus",Price=FakeData.NumberData.GetNumber(1, 300)},
+                    new Product(){Name="Ascer",Description="Steel Series",Price=FakeData.NumberData.GetNumber(1, 300)},
+                    new Product(){Name="190C",Description="Philips",Price=FakeData.NumberData.GetNumber(1, 300)},
+                    new Product(){Name="JKP21",Description="Alcatel",Price=FakeData.NumberData.GetNumber(1, 300)},
+                    new Product(){Name="Sorana",Description="Asus",Price=FakeData.NumberData.GetNumber(1, 300)}
+                };
+
+                productsList.ForEach(product => context.Products.Add(product));
+                context.SaveChanges();
+            }
+
+
+            #endregion
+
+            List<Product> listProduct = context.Products.ToList();
+
+            //Adding Comments
+            #region
+
+            if (!context.comments.Any())
+            {
+                var commentList = new List<Comment>()
+                {
+                    new Comment(){Text=FakeData.NameData.GetCompanyName(),UserBy=FakeData.NameData.GetFirstName(),ProductId=listProduct[0].Id},
+                    new Comment(){Text=FakeData.NameData.GetCompanyName(),UserBy=FakeData.NameData.GetFirstName(),ProductId=listProduct[1].Id},
+                    new Comment(){Text=FakeData.NameData.GetCompanyName(),UserBy=FakeData.NameData.GetFirstName(),ProductId=listProduct[2].Id},
+                    new Comment(){Text=FakeData.NameData.GetCompanyName(),UserBy=FakeData.NameData.GetFirstName(),ProductId=listProduct[3].Id},
+                    new Comment(){Text=FakeData.NameData.GetCompanyName(),UserBy=FakeData.NameData.GetFirstName(),ProductId=listProduct[4].Id},
+                    new Comment(){Text=FakeData.NameData.GetCompanyName(),UserBy=FakeData.NameData.GetFirstName(),ProductId=listProduct[5].Id},
+                    new Comment(){Text=FakeData.NameData.GetCompanyName(),UserBy=FakeData.NameData.GetFirstName(),ProductId=listProduct[6].Id},
+                    new Comment(){Text=FakeData.NameData.GetCompanyName(),UserBy=FakeData.NameData.GetFirstName(),ProductId=listProduct[7].Id},
+                    new Comment(){Text=FakeData.NameData.GetCompanyName(),UserBy=FakeData.NameData.GetFirstName(),ProductId=listProduct[8].Id},
+                    new Comment(){Text=FakeData.NameData.GetCompanyName(),UserBy=FakeData.NameData.GetFirstName(),ProductId=listProduct[9].Id},
+                    new Comment(){Text=FakeData.NameData.GetCompanyName(),UserBy=FakeData.NameData.GetFirstName(),ProductId=listProduct[10].Id},
+                    new Comment(){Text=FakeData.NameData.GetCompanyName(),UserBy=FakeData.NameData.GetFirstName(),ProductId=listProduct[11].Id},
+                    new Comment(){Text=FakeData.NameData.GetCompanyName(),UserBy=FakeData.NameData.GetFirstName(),ProductId=listProduct[12].Id}
 
                 };
 
-                context.products.AddOrUpdate(product);
+                commentList.ForEach(comment => context.comments.Add(comment));
+                context.SaveChanges();
             }
 
-            context.SaveChanges();
+            #endregion
 
-            List<Product> listProduct = context.products.ToList();
+            //Adding Users
+            #region
 
-            for (int i = 0; i < listProduct.Count - 1; i++)
+            if (!context.users.Any())
             {
-                Comment comment = new Comment()
+                var userList = new List<User>()
                 {
-                    Id = i + 1,
-                    Text = FakeData.NameData.GetCompanyName(),
-                    UserBy = FakeData.NameData.GetFirstName(),
-                    ProductId = listProduct[i].Id
+                    new User(){ UserName = "alican03",FirstName = "Alican",LastName = "Yilmaz",Email = "alicany@mail",Password = "1234"},
+                    new User(){ UserName = "yilmaz03", FirstName = "Yilmaz", LastName = "Gelistirici",Email = "contact@alicanyilmaz", Password = "4321"}
                 };
-
-                context.comments.AddOrUpdate(comment);
+                userList.ForEach(user => context.users.Add(user));
+                context.SaveChanges();
             }
 
-            context.SaveChanges();
-
-            User userone = new User()
-            {
-                UserName = "03Alican",
-                FirstName = "Alican",
-                LastName = "Yilmaz",
-                Email = "alicany@mail",
-                Password = "1a2b3c"
-
-            };
-
-            context.users.AddOrUpdate(userone);
-
-            User usertwo = new User()
-            {
-                UserName = "05Alican",
-                FirstName = "Ali",
-                LastName = "Can",
-                Email = "contact@alicanyilmaz",
-                Password = "a1b2c3"
-
-            };
-
-            context.users.AddOrUpdate(usertwo);
-
-            context.SaveChanges();
+            #endregion
 
             List<User> users = context.users.ToList();
 
-            Role roleone = new Role()
+            //Adding Roles
+            #region
+
+            if (!context.roles.Any())
             {
-                Name="Admin",
-            };
+                var roleList = new List<Role>()
+                {
+                    new Role(){Name="Admin"},
+                    new Role(){Name="Student"},
+                    new Role(){Name="Editor"}
+                };
+                roleList.ForEach(role=>context.roles.Add(role));
+                context.SaveChanges();
+            }
 
-            context.roles.AddOrUpdate(roleone);
-
-            Role roletwo = new Role()
-            {
-                Name = "Student",
-            };
-
-            context.roles.AddOrUpdate(roletwo);
-
-            Role rolethree = new Role()
-            {
-                Name = "Editor",
-            };
-
-            context.roles.AddOrUpdate(rolethree);
-
-            context.SaveChanges();
+            #endregion
 
             List<Role> roles = context.roles.ToList();
 
-            UserRoles userRolesone = new UserRoles()
+            //Adding UserRoles
+            #region
+
+            if (!context.userRoles.Any())
             {
-               UserId=users[0].Id,
-               RoleId=roles[1].Id,
-            };
+                var userRolesList = new List<UserRoles>() 
+                {
+                    new UserRoles(){UserId=users[0].Id,RoleId=roles[1].Id},
+                    new UserRoles(){UserId=users[1].Id,RoleId=roles[0].Id}
 
-            context.userRoles.AddOrUpdate(userRolesone);
+                };
+                userRolesList.ForEach(userrole=>context.userRoles.Add(userrole));
+                context.SaveChanges();
+            }
 
-            UserRoles userRolestwo = new UserRoles()
-            {
-                UserId = users[1].Id,
-                RoleId = roles[0].Id,
-            };
-
-            context.userRoles.AddOrUpdate(userRolestwo);
-
-            context.SaveChanges();
+            #endregion
         }
     }
 }

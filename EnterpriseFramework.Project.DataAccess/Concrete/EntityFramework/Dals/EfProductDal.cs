@@ -16,7 +16,7 @@ namespace EnterpriseFramework.Project.DataAccess.Concrete.EntityFramework.Dals
         {
             using (DatabaseContext context = new DatabaseContext())
             {
-                var result = from p in context.products
+                var result = from p in context.Products
                              join c in context.comments on p.Id equals c.ProductId
                              select new ProductDetail
                              {

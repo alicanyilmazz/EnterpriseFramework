@@ -13,9 +13,9 @@ namespace EnterpriseFramework.Project.Entities.Concrete.Entities
         {
             userRoles = new List<UserRoles>();
         }
-        public virtual int Id { get; set; }
-        public virtual string Name { get; set; }
-        public virtual List<UserRoles> userRoles { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public List<UserRoles> userRoles { get; set; }
 
     }
 }

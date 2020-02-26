@@ -12,7 +12,7 @@ namespace EnterpriseFramework.Project.DataAccess.Concrete.EntityFramework.Mappin
     {
         public UserMap()
         {
-            ToTable("User", @"dbo");
+            ToTable("Users");
 
             HasKey(x => x.Id);
             Property(x => x.Id).HasColumnName("Id");

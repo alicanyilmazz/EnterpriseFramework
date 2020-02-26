@@ -10,18 +10,146 @@
   "UserName": "DESKTOP-GNU2PAE\\alican",
   "MessageObject": {
     "FullName": "ProductManager",
-    "MethodName": "Add",
+    "MethodName": "MapToSameTypeList",
     "Parameters": [
       {
-        "Name": "product",
-        "Type": "Product",
-        "Value": {
-          "Id": 1,
-          "Name": "Premium Asus Rog",
-          "Description": "Intel Core i7 processor",
-          "Price": 23.0,
-          "comments": []
-        }
+        "Name": "list",
+        "Type": "List`1",
+        "Value": [
+          {
+            "Id": 1,
+            "Name": "KF552",
+            "Description": "Asus Rog",
+            "Price": 203.00,
+            "comments": []
+          },
+          {
+            "Id": 2,
+            "Name": "Airstar",
+            "Description": "Lenovo",
+            "Price": 37.00,
+            "comments": []
+          },
+          {
+            "Id": 3,
+            "Name": "Via",
+            "Description": "Casper",
+            "Price": 225.00,
+            "comments": []
+          },
+          {
+            "Id": 4,
+            "Name": "Avatar",
+            "Description": "MSI",
+            "Price": 82.00,
+            "comments": []
+          },
+          {
+            "Id": 5,
+            "Name": "X6",
+            "Description": "Iphone",
+            "Price": 273.00,
+            "comments": []
+          },
+          {
+            "Id": 6,
+            "Name": "S7 Edge",
+            "Description": "Samsung",
+            "Price": 274.00,
+            "comments": []
+          },
+          {
+            "Id": 7,
+            "Name": "S9 Edge",
+            "Description": "Samsung",
+            "Price": 294.00,
+            "comments": []
+          },
+          {
+            "Id": 8,
+            "Name": "Galaxy S6",
+            "Description": "Samsung",
+            "Price": 93.00,
+            "comments": []
+          },
+          {
+            "Id": 9,
+            "Name": "Via Phone",
+            "Description": "Casper",
+            "Price": 296.00,
+            "comments": []
+          },
+          {
+            "Id": 10,
+            "Name": "Daker",
+            "Description": "Acer",
+            "Price": 200.00,
+            "comments": []
+          },
+          {
+            "Id": 11,
+            "Name": "Sage",
+            "Description": "IBM",
+            "Price": 216.00,
+            "comments": []
+          },
+          {
+            "Id": 12,
+            "Name": "Routon",
+            "Description": "Kennon",
+            "Price": 277.00,
+            "comments": []
+          },
+          {
+            "Id": 13,
+            "Name": "M12",
+            "Description": "Xaimio",
+            "Price": 126.00,
+            "comments": []
+          },
+          {
+            "Id": 14,
+            "Name": "M9",
+            "Description": "Xaimio Mi",
+            "Price": 85.00,
+            "comments": []
+          },
+          {
+            "Id": 15,
+            "Name": "Lotus",
+            "Description": "Asus",
+            "Price": 205.00,
+            "comments": []
+          },
+          {
+            "Id": 16,
+            "Name": "Ascer",
+            "Description": "Steel Series",
+            "Price": 62.00,
+            "comments": []
+          },
+          {
+            "Id": 17,
+            "Name": "190C",
+            "Description": "Philips",
+            "Price": 256.00,
+            "comments": []
+          },
+          {
+            "Id": 18,
+            "Name": "JKP21",
+            "Description": "Alcatel",
+            "Price": 47.00,
+            "comments": []
+          },
+          {
+            "Id": 19,
+            "Name": "Sorana",
+            "Description": "",
+            "Price": 26.00,
+            "comments": []
+          }
+        ]
       }
     ]
   }
@@ -46,29 +174,153 @@
   "UserName": "DESKTOP-GNU2PAE\\alican",
   "MessageObject": {
     "FullName": "ProductManager",
-    "MethodName": "TransactionalOperations",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "ProductManager",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "UserManager",
+    "MethodName": "GetByUserNameAndPassword",
     "Parameters": [
       {
-        "Name": "adding_product",
-        "Type": "Product",
-        "Value": {
-          "Id": 1,
-          "Name": "Premium Lenovo",
-          "Description": "Intel Core i7 processor",
-          "Price": 23.0,
-          "comments": []
-        }
+        "Name": "userName",
+        "Type": "String",
+        "Value": "yilmaz03"
       },
       {
-        "Name": "updating_product",
-        "Type": "Product",
-        "Value": {
-          "Id": 1,
-          "Name": "Premium Casper",
-          "Description": "Intel Core i8 processor",
-          "Price": 29.0,
-          "comments": []
-        }
+        "Name": "password",
+        "Type": "String",
+        "Value": "4321"
       }
     ]
   }
@@ -76,29 +328,20 @@
 {
   "UserName": "DESKTOP-GNU2PAE\\alican",
   "MessageObject": {
-    "FullName": "ProductManager",
-    "MethodName": "TransactionalOperations",
+    "FullName": "UserManager",
+    "MethodName": "getUserRoles",
     "Parameters": [
       {
-        "Name": "adding_product",
-        "Type": "Product",
+        "Name": "user",
+        "Type": "User",
         "Value": {
-          "Id": 1,
-          "Name": "Premium Sample1",
-          "Description": "Intel Core i21 processor",
-          "Price": 23.0,
-          "comments": []
-        }
-      },
-      {
-        "Name": "updating_product",
-        "Type": "Product",
-        "Value": {
-          "Id": 1,
-          "Name": "Premium Sample2",
-          "Description": "Intel Core i8 processor",
-          "Price": 18.0,
-          "comments": []
+          "Id": 2,
+          "UserName": "yilmaz03",
+          "Password": "4321",
+          "FirstName": "Yilmaz",
+          "LastName": "Gelistirici",
+          "Email": "contact@alicanyilmaz",
+          "userRoles": []
         }
       }
     ]
@@ -108,29 +351,25 @@
   "UserName": "DESKTOP-GNU2PAE\\alican",
   "MessageObject": {
     "FullName": "ProductManager",
-    "MethodName": "TransactionalOperations",
+    "MethodName": "GetAll",
+    "Parameters": []
+  }
+}
+{
+  "UserName": "DESKTOP-GNU2PAE\\alican",
+  "MessageObject": {
+    "FullName": "UserManager",
+    "MethodName": "GetByUserNameAndPassword",
     "Parameters": [
       {
-        "Name": "adding_product",
-        "Type": "Product",
-        "Value": {
-          "Id": 1,
-          "Name": "Asus Rog",
-          "Description": "Amd processor",
-          "Price": 23.0,
-          "comments": []
-        }
+        "Name": "userName",
+        "Type": "String",
+        "Value": "alican03"
       },
       {
-        "Name": "updating_product",
-        "Type": "Product",
-        "Value": {
-          "Id": 1,
-          "Name": "Phone",
-          "Description": "Amd processor",
-          "Price": 18.0,
-          "comments": []
-        }
+        "Name": "password",
+        "Type": "String",
+        "Value": "1234"
       }
     ]
   }
@@ -138,91 +377,22 @@
 {
   "UserName": "DESKTOP-GNU2PAE\\alican",
   "MessageObject": {
-    "errors": [
+    "FullName": "UserManager",
+    "MethodName": "getUserRoles",
+    "Parameters": [
       {
-        "PropertyName": "Price",
-        "ErrorMessage": "'Price' must be greater than '20'.",
-        "AttemptedValue": 3.0,
-        "CustomState": null,
-        "Severity": 0,
-        "ErrorCode": "GreaterThanValidator",
-        "FormattedMessageArguments": [],
-        "FormattedMessagePlaceholderValues": {
-          "ComparisonValue": 20.0,
-          "ComparisonProperty": "",
-          "PropertyName": "Price",
-          "PropertyValue": 3.0
-        },
-        "ResourceName": "GreaterThanValidator"
+        "Name": "user",
+        "Type": "User",
+        "Value": {
+          "Id": 1,
+          "UserName": "alican03",
+          "Password": "1234",
+          "FirstName": "Alican",
+          "LastName": "Yilmaz",
+          "Email": "alicany@mail",
+          "userRoles": []
+        }
       }
-    ],
-    "ClassName": "FluentValidation.ValidationException",
-    "Message": "Validation failed: \r\n -- Price: 'Price' must be greater than '20'.",
-    "Data": null,
-    "InnerException": null,
-    "HelpURL": null,
-    "StackTraceString": "   at EnterpriseFramework.Core.CrossCuttingConcerns.Validation.FluentValidation.ValidatorTool.FluentValidate(IValidator validator, Object entity) in C:\\Users\\alican\\source\\repos\\EnterpriseFramework\\EnterpriseFramework.Core\\CrossCuttingConcerns\\Validation\\FluentValidation\\ValidatorTool.cs:line 17\r\n   at EnterpriseFramework.Core.Aspects.PostSharp.ValidationAspects.FluentValidationAspect.OnEntry(MethodExecutionArgs args) in C:\\Users\\alican\\source\\repos\\EnterpriseFramework\\EnterpriseFramework.Core\\Aspects\\PostSharp\\ValidationAspects\\FluentValidationAspect.cs:line 28\r\n   at EnterpriseFramework.Project.Business.Concrete.Managers.ProductManager.TransactionalOperations(Product adding_product, Product updating_product) in C:\\Users\\alican\\source\\repos\\EnterpriseFramework\\EnterpriseFramework.Project.Business\\Concrete\\Managers\\ProductManager.cs:line 45",
-    "RemoteStackTraceString": null,
-    "RemoteStackIndex": 0,
-    "ExceptionMethod": "8\nFluentValidate\nEnterpriseFramework.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null\nEnterpriseFramework.Core.CrossCuttingConcerns.Validation.FluentValidation.ValidatorTool\nVoid FluentValidate(FluentValidation.IValidator, System.Object)",
-    "HResult": -2146233088,
-    "Source": "EnterpriseFramework.Core",
-    "WatsonBuckets": null
-  }
-}
-{
-  "UserName": "DESKTOP-GNU2PAE\\alican",
-  "MessageObject": {
-    "FullName": "ProductManager",
-    "MethodName": "GetAll",
-    "Parameters": []
-  }
-}
-{
-  "UserName": "DESKTOP-GNU2PAE\\alican",
-  "MessageObject": {
-    "FullName": "ProductManager",
-    "MethodName": "GetAll",
-    "Parameters": []
-  }
-}
-{
-  "UserName": "DESKTOP-GNU2PAE\\alican",
-  "MessageObject": {
-    "FullName": "ProductManager",
-    "MethodName": "GetAll",
-    "Parameters": []
-  }
-}
-{
-  "UserName": "DESKTOP-GNU2PAE\\alican",
-  "MessageObject": {
-    "FullName": "ProductManager",
-    "MethodName": "GetAll",
-    "Parameters": []
-  }
-}
-{
-  "UserName": "DESKTOP-GNU2PAE\\alican",
-  "MessageObject": {
-    "FullName": "ProductManager",
-    "MethodName": "GetAll",
-    "Parameters": []
-  }
-}
-{
-  "UserName": "DESKTOP-GNU2PAE\\alican",
-  "MessageObject": {
-    "FullName": "ProductManager",
-    "MethodName": "GetAll",
-    "Parameters": []
-  }
-}
-{
-  "UserName": "DESKTOP-GNU2PAE\\alican",
-  "MessageObject": {
-    "FullName": "ProductManager",
-    "MethodName": "GetAll",
-    "Parameters": []
+    ]
   }
 }

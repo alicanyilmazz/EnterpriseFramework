@@ -93,9 +93,15 @@
     <Compile Include="Concrete\EntityFramework\Mappings\UserRolesMap.cs" />
     <Compile Include="Concrete\NHibernate\Dals\NhCommentDal.cs" />
     <Compile Include="Concrete\NHibernate\Dals\NhProductDal.cs" />
+    <Compile Include="Concrete\NHibernate\Dals\NhRoleDal.cs" />
+    <Compile Include="Concrete\NHibernate\Dals\NhUserDal.cs" />
+    <Compile Include="Concrete\NHibernate\Dals\NhUserRolesDal.cs" />
     <Compile Include="Concrete\NHibernate\Helpers\SqlServerHelper.cs" />
     <Compile Include="Concrete\NHibernate\Mappings\CommentMap.cs" />
     <Compile Include="Concrete\NHibernate\Mappings\ProductMap.cs" />
+    <Compile Include="Concrete\NHibernate\Mappings\RoleMap.cs" />
+    <Compile Include="Concrete\NHibernate\Mappings\UserMap.cs" />
+    <Compile Include="Concrete\NHibernate\Mappings\UserRolesMap.cs" />
     <Compile Include="Migrations\202001212258049_Initial.cs" />
     <Compile Include="Migrations\202001212258049_Initial.designer.cs">
       <DependentUpon>202001212258049_Initial.cs</DependentUpon>

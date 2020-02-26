@@ -7,10 +7,8 @@ using EnterpriseFramework.Core.Aspects.PostSharp.ValidationAspects;
 using EnterpriseFramework.Core.Aspects.PostSharp.TransactionAspects;
 using EnterpriseFramework.Core.Aspects.PostSharp.CacheAspects;
 using EnterpriseFramework.Core.CrossCuttingConcerns.Caching.Microsoft;
-using EnterpriseFramework.Core.CrossCuttingConcerns.Logging.Log4Net.Loggers;
-using EnterpriseFramework.Core.Aspects.PostSharp.LogAspects;
-using EnterpriseFramework.Core.Aspects.PostSharp.PerformanceAspects;
-using System.Threading;
+using AutoMapper;
+using EnterpriseFramework.Core.Utilities.Mappings.AutoMapper;
 using EnterpriseFramework.Core.Aspects.PostSharp.AuthorizationAspects;
 
 namespace EnterpriseFramework.Project.Business.Concrete.Managers
@@ -18,10 +16,12 @@ namespace EnterpriseFramework.Project.Business.Concrete.Managers
     public class ProductManager : IProductService
     {
         private IProductDal _productDal;
+        private IMapper _mapper;
 
-        public ProductManager(IProductDal productDal)
+        public ProductManager(IProductDal productDal, IMapper mapper)
         {
             _productDal = productDal;
+            _mapper = mapper;
         }
 
         [FluentValidationAspect(typeof(ProductValidator))]
@@ -31,12 +31,14 @@ namespace EnterpriseFramework.Project.Business.Concrete.Managers
             return _productDal.Add(product);
         }
 
-        [CacheAspect(typeof(MemoryCacheManager),60)]
+        [CacheAspect(typeof(MemoryCacheManager), 60)]
         //[PerformanceCounterAspect(2)]  --> PerformanceCounterAspect using Assembly level
-        [SecuredOperation(Roles ="Admin,Editor")]
+        [SecuredOperation(Roles = "Admin,Editor")]
         public List<Product> GetAll()
         {
-            return _productDal.GetList();
+            //var products = AutoMapperHelper.MapToSameTypeList<Product>(_productDal.GetList());
+            var products = _mapper.Map<List<Product>>(_productDal.GetList());
+            return products;
         }
 
         public Product GetById(int id)
@@ -58,5 +60,6 @@ namespace EnterpriseFramework.Project.Business.Concrete.Managers
         {
             return _productDal.Update(product);
         }
+
     }
 }

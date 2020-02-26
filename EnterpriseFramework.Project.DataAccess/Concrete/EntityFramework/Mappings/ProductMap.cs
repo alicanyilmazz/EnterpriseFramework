@@ -12,12 +12,12 @@ namespace EnterpriseFramework.Project.DataAccess.Concrete.EntityFramework.Mappin
     {
         public ProductMap()
         {
-            ToTable("Product", @"dbo");
+            ToTable("Product");
 
             HasKey(x => x.Id);
             Property(x => x.Id).HasColumnName("Id");
             Property(x => x.Id).HasColumnOrder(0);
-            //Property(x => x.Id).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
+            Property(x => x.Id).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Identity);
 
             Property(x => x.Name).HasColumnName("Name");
             Property(x => x.Name).HasColumnOrder(1);

@@ -18,7 +18,7 @@ namespace EnterpriseFramework.Project.DataAccess.Concrete.EntityFramework
             //Database.SetInitializer<DatabaseContext>(null);
             //Database.SetInitializer(new DatabaseInitializer());
         }
-        public DbSet<Product> products { get; set; }
+        public DbSet<Product> Products { get; set; }
         public DbSet<Comment> comments { get; set; }
         public DbSet<User> users { get; set; }
         public DbSet<UserRoles> userRoles { get; set; }

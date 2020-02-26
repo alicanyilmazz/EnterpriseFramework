@@ -9,10 +9,10 @@ namespace EnterpriseFramework.Project.Entities.Concrete.Entities
 {
     public class Comment : IEntity
     {
-        public virtual int Id { get; set; }
-        public virtual string Text { get; set; }
-        public virtual string UserBy { get; set; }
-        public virtual int ProductId { get; set; }
-        public virtual Product product { get; set; }
+        public int Id { get; set; }
+        public string Text { get; set; }
+        public string UserBy { get; set; }
+        public int ProductId { get; set; }
+        public Product product { get; set; }
     }
 }

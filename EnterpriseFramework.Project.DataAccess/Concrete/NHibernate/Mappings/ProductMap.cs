@@ -15,9 +15,9 @@ namespace EnterpriseFramework.Project.DataAccess.Concrete.NHibernate.Mappings
             Table(@"Product");
             LazyLoad();
             Id(x=>x.Id).Column("Id");
-            Map(x => x.Name).Column("Name");
-            Map(x => x.Description).Column("Description");
-            Map(x=>x.Price).Column("Price");
+            Map(x => x.Name).Column("Name").Length(25).Not.Nullable();
+            Map(x => x.Description).Column("Description").Length(300).Not.Nullable();
+            Map(x=>x.Price).Column("Price").Not.Nullable();
         }
     }
 }

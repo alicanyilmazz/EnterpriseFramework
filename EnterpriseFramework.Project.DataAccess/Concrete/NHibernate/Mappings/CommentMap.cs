@@ -16,9 +16,9 @@ namespace EnterpriseFramework.Project.DataAccess.Concrete.NHibernate.Mappings
             LazyLoad();
 
             Id(x => x.Id).Column("Id");
-            Map(x => x.Text).Column("Text");
-            Map(x => x.UserBy).Column("UserBy");
-            Map(x => x.ProductId).Column("ProductId");
+            Map(x => x.Text).Column("Text").Length(25).Not.Nullable();
+            Map(x => x.UserBy).Column("UserBy").Length(25).Not.Nullable();
+            Map(x => x.ProductId).Column("ProductId").Not.Nullable();
         }
     }
 }

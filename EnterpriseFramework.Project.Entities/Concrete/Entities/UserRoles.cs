@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace EnterpriseFramework.Project.Entities.Concrete.Entities
 {
-    public class UserRoles: IEntity
+    public class UserRoles : IEntity
     {
-        public virtual int Id { get; set; }
-        public virtual int UserId { get; set; }
-        public virtual int RoleId { get; set; }
-        public virtual User user { get; set; }
-        public virtual Role role { get; set; }
+        public int Id { get; set; }
+        public int UserId { get; set; }
+        public int RoleId { get; set; }
+        public User user { get; set; }
+        public Role role { get; set; }
 
     }
 }

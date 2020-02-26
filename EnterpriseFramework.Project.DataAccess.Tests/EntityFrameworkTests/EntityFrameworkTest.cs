@@ -14,7 +14,7 @@ namespace EnterpriseFramework.Project.DataAccess.Tests.EntityFrameworkTests
 
             var result = efProductDal.GetList();
 
-            Assert.AreEqual(40,result.Count);
+            Assert.AreEqual(19,result.Count);
         }
 
         [TestMethod]
@@ -22,13 +22,11 @@ namespace EnterpriseFramework.Project.DataAccess.Tests.EntityFrameworkTests
         {
             EfProductDal efProductDal = new EfProductDal();
 
-            var result = efProductDal.GetList(p=>p.Id>20 && p.Id<30);
+            var result = efProductDal.GetList(p => p.Name.Contains("a"));
             Assert.AreEqual(9, result.Count);
+
+
         }
     }
 }
-/*
- * We did not like a test code as follows because Configuration Seed Method used continuously FakeData dll for every transaction Migration.
-   select count(*) from Product where Product.Name like '%j%'
-   var result = efProductDal.GetList(p =>p.Name.Contains("j"));   
- */
+

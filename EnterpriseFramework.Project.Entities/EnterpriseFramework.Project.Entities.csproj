@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ComplexTypes\ProductDetail.cs" />
+    <Compile Include="ComplexTypes\UserRoleItem.cs" />
     <Compile Include="Concrete\Entities\Comment.cs" />
     <Compile Include="Concrete\Entities\Product.cs" />
     <Compile Include="Concrete\Entities\Role.cs" />
@@ -51,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Concrete\Models\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EnterpriseFramework.Core\EnterpriseFramework.Core.csproj">

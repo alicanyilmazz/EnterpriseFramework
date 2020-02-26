@@ -25,7 +25,7 @@ namespace EnterpriseFramework.Project.MvcUI.Controllers
             return View(model);
         }
 
-        public string Add()
+        public string Add()//For Adding Operations control.
         {
             _productService.Add(new Entities.Concrete.Entities.Product
             { 
@@ -39,7 +39,7 @@ namespace EnterpriseFramework.Project.MvcUI.Controllers
             return "Added.";
         }
 
-        public string AddAndUpdate()
+        public string AddAndUpdate() //For TransactionAspect control.
         {
             _productService.TransactionalOperations(new Entities.Concrete.Entities.Product
             {

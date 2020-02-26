@@ -12,7 +12,7 @@ namespace EnterpriseFramework.Project.DataAccess.Concrete.EntityFramework.Mappin
     {
         public UserRolesMap()
         {
-            ToTable("UserRoles", @"dbo");
+            ToTable("UserRoles");
 
             HasKey(x => x.Id);
             Property(x => x.Id).HasColumnName("Id");

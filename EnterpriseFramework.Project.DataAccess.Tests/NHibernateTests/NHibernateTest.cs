@@ -15,7 +15,7 @@ namespace EnterpriseFramework.Project.DataAccess.Tests.NHibernateTests
 
             var result = nhProductDal.GetList();
 
-            Assert.AreEqual(40, result.Count);
+            Assert.AreEqual(19, result.Count);
         }
 
         [TestMethod]
@@ -23,7 +23,7 @@ namespace EnterpriseFramework.Project.DataAccess.Tests.NHibernateTests
         {
             NhProductDal nhProductDal = new NhProductDal(new SqlServerHelper());
 
-            var result = nhProductDal.GetList(p => p.Id > 20 && p.Id < 30);
+            var result = nhProductDal.GetList(p => p.Name.Contains("a"));
             Assert.AreEqual(9, result.Count);
         }
     }

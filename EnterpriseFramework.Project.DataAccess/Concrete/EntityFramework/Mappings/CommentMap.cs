@@ -12,12 +12,12 @@ namespace EnterpriseFramework.Project.DataAccess.Concrete.EntityFramework.Mappin
     {
         public CommentMap()
         {
-            ToTable("Comments", "ETrade");
+            ToTable("Comments");
 
             HasKey(x => x.Id);
             Property(x => x.Id).HasColumnName("Id");
             Property(x => x.Id).HasColumnOrder(0);
-            //this.Property(x => x.Id).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.None);
+            Property(x => x.Id).HasDatabaseGeneratedOption(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Identity);
 
             Property(x => x.Text).HasColumnName("Text");
             Property(x => x.Text).HasColumnOrder(1);

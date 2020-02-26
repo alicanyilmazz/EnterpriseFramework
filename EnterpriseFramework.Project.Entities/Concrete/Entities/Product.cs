@@ -13,10 +13,10 @@ namespace EnterpriseFramework.Project.Entities.Concrete.Entities
         {
             comments = new List<Comment>();
         }
-        public virtual int Id { get; set; }
-        public virtual string Name { get; set; }
-        public virtual string Description { get; set; }
-        public virtual decimal Price { get; set; }
-        public virtual List<Comment> comments { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public decimal Price { get; set; }
+        public List<Comment> comments { get; set; }
     }
 }

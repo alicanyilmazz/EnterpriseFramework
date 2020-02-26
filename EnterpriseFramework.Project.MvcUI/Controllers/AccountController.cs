@@ -1,4 +1,5 @@
 ﻿using EnterpriseFramework.Core.CrossCuttingConcerns.Security.Web;
+using EnterpriseFramework.Project.Business.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +10,21 @@ namespace EnterpriseFramework.Project.MvcUI.Controllers
 {
     public class AccountController : Controller
     {
-        // GET: Account
-        public string Login()
+        private IUserService _userService;
+        public AccountController(IUserService userService)
         {
-            AuthenticationHelper.CreateAuthCookie(new Guid(),"AlicanYilmaz","alicanyilmaz101@gmail.com",DateTime.Now.AddDays(15),new[] {"Admin"},false,"Alican","Yilmaz");
-            return "User is authenticated!";
+            _userService = userService;
+        }
+        public string Login(string userName, string password) //We can user Querystring for testing "AuthenticationHelper" as simply.
+        {
+            var user = _userService.GetByUserNameAndPassword(userName, password);
+            if (user != null)
+            {
+                AuthenticationHelper.CreateAuthCookie(new Guid(), user.UserName, user.Email, DateTime.Now.AddDays(15),_userService.getUserRoles(user).Select(u=>u.RoleName).ToArray(), false, user.FirstName, user.LastName);
+                return "User is authenticated!";
+            }
+
+            return "User is not authenticated!";
         }
     }
 }
