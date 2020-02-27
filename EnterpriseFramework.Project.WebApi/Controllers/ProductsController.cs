@@ -13,8 +13,6 @@ namespace EnterpriseFramework.Project.WebApi.Controllers
         {
             _productService = productService;
         }
-
-
         public List<Product> Get()
         {
             return _productService.GetAll();

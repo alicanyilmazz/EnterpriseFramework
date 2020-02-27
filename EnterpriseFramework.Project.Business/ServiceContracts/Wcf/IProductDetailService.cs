@@ -6,10 +6,10 @@ using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EnterpriseFramework.Project.Business.Abstract
+namespace EnterpriseFramework.Project.Business.ServiceContracts.Wcf
 {
     [ServiceContract]
-    public interface IProductService
+    public interface IProductDetailService
     {
         [OperationContract]
         List<Product> GetAll();
@@ -24,6 +24,7 @@ namespace EnterpriseFramework.Project.Business.Abstract
         Product Update(Product product);
 
         [OperationContract]
-        void TransactionalOperations(Product adding_product,Product updating_product);
+        void TransactionalOperations(Product adding_product, Product updating_product);
+
     }
 }

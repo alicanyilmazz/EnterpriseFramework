@@ -33,7 +33,7 @@ namespace EnterpriseFramework.Project.Business.Concrete.Managers
 
         [CacheAspect(typeof(MemoryCacheManager), 60)]
         //[PerformanceCounterAspect(2)]  --> PerformanceCounterAspect using Assembly level
-        [SecuredOperation(Roles = "Admin,Editor")]
+        //[SecuredOperation(Roles = "Admin,Editor")]
         public List<Product> GetAll()
         {
             //var products = AutoMapperHelper.MapToSameTypeList<Product>(_productDal.GetList());
