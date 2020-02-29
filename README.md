@@ -22,3 +22,4 @@
 * Anti-Spaghetti Refactoring Implementation
 * Code Smell (Summary,Techical Debt) Agile Code Techniques , The least privilege principle
 * Reference Type Based Sustainable Refactoring
+* Cross Cutting Concerns
